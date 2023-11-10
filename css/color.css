@@ -1,0 +1,234 @@
+/*body{
+    background-color: white;
+    margin:0% 5%;
+    font-family: Roboto;
+}*/
+
+/*.color-cabecera {
+    background-color: gray;
+    padding-bottom: 10px;
+}*/
+
+.color-cabecera h2 {
+    color: white;
+    font-size: 40px;
+}
+
+.color-cabecera p{
+    font-size: 20px;
+    color: white;
+}
+
+/* article 1 */
+/*.color-article1 {
+    background-color: #cccccc;
+    padding-bottom: 20px;
+    border-radius: 5px;
+}*/
+
+h2{
+    padding-top: 30px;
+    color: slateblue;
+}
+
+h3 {
+    color: dodgerblue;
+}
+
+.color-texto-colores{
+    display: flex;
+}
+
+.color-article1 a{
+    text-align: center;
+    display: block;
+}
+
+.color-article1 p{
+    text-align: center;
+}
+
+.color-caja-colores{
+    display:flex;
+    justify-content: center;
+}
+
+.color-caja1{
+    text-align: center;
+    line-height: 100px;
+}
+
+.color-caja2{
+    text-align: center;
+    line-height: 100px;
+}
+
+.color-caja1 div{
+    width: 200px;
+    height: 100px;
+    margin:5px;
+}
+
+.color-caja2 div{
+    width: 200px;
+    height: 100px;
+    margin:5px;
+}
+
+.color-tomato {
+    background-color: tomato;
+    color: white;
+}
+
+.color-dodgerblue{
+    background-color: dodgerblue;
+    color: white;
+}
+
+.color-grey {
+    background-color: grey;
+    color: white;
+}
+
+.color-violet{
+    background-color: violet;
+    color: white;
+}
+
+.color-orange {
+    background-color: orange;
+    color: white;
+}
+
+.color-mediumseagreen {
+    background-color: mediumseagreen;
+    color: white;
+}
+
+.color-slateblue {
+    background-color: slateblue;
+    color: white;
+}
+
+.color-yellow {
+    background-color: yellow;
+    color: orange;
+}
+
+.color-boton a{
+    text-decoration: none;
+    color: white;
+}
+
+.color-boton {
+    width: 100px;
+    background-color: tomato;
+    margin: auto;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 2px gray;
+}
+
+.color-boton:hover {
+    background-color: dodgerblue;
+}
+
+/* article 2 */
+
+/*.color-article2{
+    background-color: #eeeeee;
+    border-radius: 5px;
+    padding-bottom: 20px;
+}*/
+
+.color-article2 p{
+    text-align: center;
+}
+
+
+.color-rgb{
+    background-color:#cccccc ;
+    width: 500px;
+    height: 20vh;
+    box-sizing: border-box; 
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.color-rgb div{
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    border-radius: 50px;
+}
+
+.color-verde {
+    background-color: mediumseagreen;
+}
+
+.color-azul {
+    background-color: blue;
+}
+
+.color-rojo {
+    background-color: red;
+}
+
+.color-cajas-rgb{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 80px;
+}
+
+.color-caja-rgb-lila {
+    width: 300px;
+    height: 100px;
+    background-color: rgb(238, 130, 238);
+    margin: 5px;
+}
+
+.color-caja-rgb-orange {
+    width: 300px;
+    height: 100px;
+    background-color: rgb(255, 165, 0);
+    margin: 5px;
+}
+
+.color-caja-rgb-red {
+    width: 300px;
+    height: 100px;
+    background-color: rgb(255, 99, 71);
+    margin: 5px;
+}
+
+.color-caja-rgb p{
+    color: white;
+}
+
+.color-fondo-rgb {
+    width: 50%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.color-container-img{
+    width: 600px;
+    height: 300px;
+    background-image: url(/img/background.jpg);
+    background-size: cover; /* ajusta el tamaño de la imagen para cubrir todo el div */
+    background-position: center; /* centra la imagen en el div */
+    background-repeat: no-repeat; /* evita que la imagen se repita */
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.color-alfa{
+    width:300px;
+    height: 100px;
+    background-color: rgb(255, 165, 0, 0.5);
+}
