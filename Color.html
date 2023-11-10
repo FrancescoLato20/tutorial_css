@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang='es'>
+
+<head>
+    <meta charset='UTF-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>Tutorial Color</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/color.css">
+</head>
+
+<body>
+    <body>
+        <header>
+            <h1><a href="index.html">TUTORIAL CSS3 - 2023/2024</a></h1>
+            <h2><img src="icon/language-css3.svg"></h2>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="Bordes.html">Bordes</a></li>
+                <li><a href="Fondos.html">Fondos</a></li>
+                <li><a href="Efectos_texto.html">Fuentes y Ef Texto</a></li>   
+                <li><a href="Transformaciones.html">Transformac.</a></li>
+                <li><a href="Transiciones.html">Transiciones</a></li>
+                <li><a href="Animaciones.html">Animaciones</a></li>
+                <li><a href="Col_mult.html">Col Múltiples</a></li>
+                <li><a href="Color.html">Color y Degradado</a></li>
+                <li><a href="Pseudos_Css3.html">Pseudos CSS3</a></li>
+                <li><a href="Svg_filter.html">Filter y SVG</a></li>
+    
+            </ul>
+        </nav>
+        <main>
+            <div>
+                <h2>TUTORIAL CSS3</h2>
+                <h3>Resultado de la combinación de todos los ejercicios de la práctica 7 de los alumnos de 2ºDAW 2023-2024</h3>
+            </div>
+        </main>
+    <article class="sergio">
+        <h2>Degradados lineales</h2>
+        <p>En esta parte se verán los degradados lineales.</p>
+    </article>
+    <article class="sergio">
+        <h3>Degradado lineal básico</h3>
+        <div class="contenedor" id="deglinbasico"></div>
+        <p>En este caso hemos usado un degradado lineal básico. Su funcionamiento es simple, a la propiedad
+            <b>background</b> se le añade <b>linear gradient(color1, color2).</b>
+        </p>
+        <p>Es decir, para este ejemplo se ha utilizado <b>background: linear-gradient(red, rgb(0, 255, 136))</b>.</p>
+        <div class="contenedor" id="deglinbasicostop"></div>
+        <p>Los colores
+            que se indican en linear-gradient son <b>paradas</b> y se pueden poner cuantas se quieran. En este caso se
+            ha
+            añadido el amarillo.</p>
+        <div class="contenedor" id="deglinbasicoright"></div>
+        <h3>Degradado lineal direccional</h3>
+        <p>También se puede añadir delante de las paradas de color la dirección del degradado, en este caso se ha
+            utilizado <b>"to right"</b>, quedando así
+            linear-gradient(to right, red, rgb(0, 255, 136)).</p>
+        <div class="contenedor" id="deglinbasicodiag"></div>
+        <h3>Degradado lineal diagonal</h3>
+        <p>También se puede dirigir diagonalmente, indicando dos direcciones. Por ejemplo, usaremos <b>"to bottom
+                right".</b></p>
+        <div class="contenedor" id="deglinbasicoangle"></div>
+        <h3>Degradado lineal mediante ángulos</h3>
+        <p>Podemos controlar de manera más precisa este degradado utilizando un ángulo. Por ejemplo, le hemos indicado
+            un ángulo de 10º.
+            Para ello usaremos background: linear-gradient(<b>10deg</b>, red, rgb(0, 255, 136));</p>
+        <div class="contenedor">
+            <div class="contenedor-inline" id="deglinbasicoangle0">0º</div>
+            <div class="contenedor-inline" id="deglinbasicoangle90">90º</div>
+            <div class="contenedor-inline" id="deglinbasicoangle180">180º</div>
+            <div class="contenedor-inline" id="deglinbasicoangle-90">-90º</div>
+        </div>
+        <p>En este ejemplo se pueden ver ángulos comunes y su visualización.</p>
+    </article>
+    <article class="sergio">
+        <h2>Declaración de colores y creación efectos</h2>
+        <p>En esta parte se verán la declaración de colores, sus tansiciones y como realizar efectos con ellos.</p>
+    </article>
+    <article class="sergio">
+        <h3>Uso de varios colores</h3>
+        <div class="contenedor" id="colorvarious"></div>
+        <p>Tal como se ha enseñado en el degradado lineal básico, se puede añadir más de una parada de color al
+            degradado. Su comportamiento en este caso es:
+            todos los colores ocuparán un espacio igualado y tendrán una transición suave.
+        </p>
+        <h3>Posicionamiento del color</h3>
+        <div class="contenedor" id="colorpositionejemplo1"></div>
+        <p>Se pueden posicionar los colores usando porcentajes o px.</p>
+        <p>El funcionamiento es sencillo, imaginando un cuadrado en el que los colores van hacia su derecha, tenemos un
+            rango de 0% a 100%. Si ponemos red 0%, estamos indicando que el color rojo se sitúe
+            al principio de la caja y que ocupe un 0% del tamaño de la caja, y si se utiliza green 70%, estamos
+            indicando que el color verde se sitúe a partir del 70% de la caja. </p>
+        <p>Lo que haría el degradado es empezar la transición desde el 0% con el color rojo hasta el 70% de color verde
+            adecuando los tamaños del color al a caja automáticamente.
+            Se utilizará background: linear-gradient(to right, red 0%, green 50%) pero si se utiliza background:
+            linear-gradient(to right, red 30%, green 50%) el resultado será el mismo.</p>
+        <div class="contenedor" id="colorpositionejemplo2"></div>
+        <p>Ahora que se entiende como los colores se adecuan al espacio restante, es bueno saber que se pueden utilizar
+            además de porcentajes, valores absolutos, pero solo en los degradados lineales y radiales. Por ejemplo, en
+            el ejemplo de antes,
+            podemos añadir un color amarillo que ocupe 200px.</p>
+        <p>Al añadir el color, se adecua la transición de color respetando las posiciones del color rojo al 0% y el
+            color verde al 70%, reduciendo ambos colores.</p>
+        <div class="contenedor" id="colorpositionhard"></div>
+        <p>Si lo que queremos es que los colores no tengan transición y sean colores sólidos a cada uno de sus lados,
+            podemos indicar la misma posición en ambos. Así, el color amarillo está al 70% y el verde también</p>
+        <h3>Uso de pistas de color</h3>
+        <div class="contenedor-inline" id="colornohint">Sin pista</div>
+        <div class="contenedor-inline" id="colorhint">Con pista</div>
+        <p>Si lo que queremos es cambiar el punto donde empieza la transición, podemos incluir una pista de color. Esto
+            es, podemos añadir entre los colores el lugar donde inicie la transición.</p>
+        <p>Para ello utilizaremos (yellow, 5%, green) y cambiaría la pista de color a partir del 5% de la caja.</p>
+        <div class="contenedor" id="colorstripe"></div>
+        <p>Se pueden incluir varias bandas de colores, tal como en el ejemplo en el que le quitamos la transición a la
+            caja. Para ello, se pueden añadir dos porcentajes a cada lado del color para
+            indicar las paradas. Si queremos por ejemplo tres colores, red, yellow y orange y cada uno a 33% usaremos lo
+            siguiente:</p>
+        <p><b>(red 33%,yellow 33%, yellow 66%, orange 66%)</b></p>
+        <h3>Gradientes superpuestos</h3>
+        <div class="imagen" id="coloroverlay"></div>
+        <p>Se pueden incluir colores y gradientes superpuestos sobre imágenes, por ejemplo, para ello se puede utilizar
+            la propiedad transparente y el color rojo tal que así.</p>
+        <p>El código a utilizar sería: <b>background: linear-gradient(to left, transparent, red),
+                url("../img/fondo.jpg")</b></p>
+        <h3>Gradientes apilados</h3>
+        <div class="contenedor" id="colorstacked"></div>
+        <p>Se pueden gradientes uno emcima de otro siempre que no sean opacos, es decir, asegurándonos de que al incluir
+            su color en rgba se le añada al final la transparencia.</p>
+        <p>El código a utilizar para este efecto es: <b>background: linear-gradient(217deg,rgba(255, 0, 0, 0.8),rgba(255, 0, 0, 0) 70.71%), linear-gradient(127deg, rgba(0, 255, 0, 0.8), rgba(0, 255, 0, 0) 70.71%),linear-gradient(336deg, rgba(0, 0, 255, 0.8), rgba(0, 0, 255, 0) 70.71%);</b></p>
+    </article>
+    <article class="sergio">
+        <h2>Degradados radiales</h2>
+        <p>En esta parte se verán los degradados radiales.</p>
+    </article>
+    <article class="sergio">
+        <h3>Uso de varios colores</h3>
+        <div class="contenedor" id="colorvarious"></div>
+    </article>
+</body>
+<footer>
+    <div>Jaime Rabasco Ronda</div>
+    <a href="https://x.com/jaimerr" class="social"><img src="icon/x-twitter.svg" alt="Twitter"></a>
+    <a href="https://github.com/jaimerabasco" class="social"><img src="icon/github.svg" alt="GitHub"></a>
+</footer>
+</html>

@@ -1,0 +1,101 @@
+.sergio {
+    text-align: center;
+    color: white;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.contenedor {
+    margin-left: 20%;
+    margin-right: 20%;
+    height: 50px;
+    width: auto;
+}
+
+.contenedor-inline {
+    height: 50px;
+    width: 90px;
+    display: inline-block;
+}
+
+.imagen {
+    margin-left: 20%;
+    margin-right: 20%;
+    height: 200px;
+    width: 400px;
+}
+
+#deglinbasico {
+    background: linear-gradient(red, rgb(0, 255, 136));
+}
+
+#deglinbasicostop {
+    background: linear-gradient(red, rgb(0, 255, 136), yellow);
+}
+
+#deglinbasicostop {
+    background: linear-gradient(red, rgb(0, 255, 136), yellow);
+}
+
+#deglinbasicoright {
+    background: linear-gradient(to right, red, rgb(0, 255, 136));
+}
+
+#deglinbasicodiag {
+    background: linear-gradient(to bottom right, red, rgb(0, 255, 136));
+}
+
+#deglinbasicoangle {
+    background: linear-gradient(10deg, red, rgb(0, 255, 136));
+}
+
+#deglinbasicoangle0 {
+    background: linear-gradient(0deg, red, rgb(0, 255, 136));
+}
+#deglinbasicoangle90 {
+    background: linear-gradient(90deg, red, rgb(0, 255, 136));
+}
+#deglinbasicoangle180 {
+    background: linear-gradient(180deg, red, rgb(0, 255, 136));
+}
+#deglinbasicoangle-90 {
+    background: linear-gradient(-90deg, red, rgb(0,255, 136));
+}
+
+#colorvarious {
+    background: linear-gradient(red, green, yellow, blue, brown);
+}
+
+#colorpositionejemplo1 {
+    background: linear-gradient(to right, red 30%, green 50%);
+}
+
+#colorpositionejemplo2 {
+    background: linear-gradient(to right, red 0%, yellow 150px, green 50%);
+}
+
+#colorpositionhard {
+    background: linear-gradient(to right,  yellow 70%, green 70%);
+}
+
+#colornohint {
+    background: linear-gradient(to right,  yellow, green);
+}
+
+#colorstripe {
+    background: linear-gradient(red 33%,yellow 33%, yellow 66%, orange 66%);
+}
+
+#coloroverlay {
+    background: linear-gradient(to left, transparent, red), 
+        url("../img/fondo.jpg");
+}
+
+#colorstacked {
+    background: linear-gradient(
+        217deg,
+        rgba(255, 0, 0, 0.8),
+        rgba(255, 0, 0, 0) 70.71%
+      ), linear-gradient(127deg, rgba(0, 255, 0, 0.8), rgba(0, 255, 0, 0) 70.71%),
+      linear-gradient(336deg, rgba(0, 0, 255, 0.8), rgba(0, 0, 255, 0) 70.71%);
+}
