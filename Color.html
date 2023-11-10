@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>TUTORIAL CSS3 - 2023/2024- Diseño de Interfaces Web - CFGS DAW - IES Gran Capitán</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="cxss/normalize.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/prism.css">
+    <link rel="stylesheet" href="css/prism.css">
+    <link rel="stylesheet" href="css/color.css">
+    <script src="js/prism.js"></script>
+</head>
+<body>
+    <header>
+        <h1><a href="index.html">TUTORIAL CSS3 - 2023/2024</a></h1>
+        <h2><img src="icon/language-css3.svg"></h2>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="Bordes.html">Bordes</a></li>
+            <li><a href="Fondos.html">Fondos</a></li>
+            <li><a href="Efectos_texto.html">Fuentes y Ef Texto</a></li>   
+            <li><a href="Transformaciones.html">Transformac.</a></li>
+            <li><a href="Transiciones.html">Transiciones</a></li>
+            <li><a href="Animaciones.html">Animaciones</a></li>
+            <li><a href="Col_mult.html">Col Múltiples</a></li>
+            <li><a href="Color.html">Color y Degradado</a></li>
+            <li><a href="Pseudos_Css3.html">Pseudos CSS3</a></li>
+            <li><a href="Svg_filter.html">Filter y SVG</a></li>
+
+        </ul>
+    </nav>
+    <main>
+        <div>
+            <h2>TUTORIAL CSS3 - COLORES Y DEGRADADOS</h2>
+            <h3>
+                Propiedades para Colores y Degradados en el html</h3>
+        </div>
+
+    <section>
+        <article>
+            <h3>Degradados conicos</h3>
+            <p>La función CSS conic-gradient() crea una imagen que consta de un degradado con transiciones de 
+                color giradas alrededor de un punto central (en lugar de irradiar desde el centro).</p>
+            <p>La sintaxis de degradado cónico es similar a la sintaxis de degradado radial, 
+                pero las paradas de color se colocan alrededor de un arco de degradado, 
+                la circunferencia de un círculo, en lugar de en la línea de degradado que emerge del centro del degradado, 
+                y el las paradas de color son porcentajes o grados: las longitudes absolutas no son válidas. </p>
+            <h4>Degradado Conico basico</h4>
+            <pre class="line-numbers"><code class="language-css">border-radius: .simple-conic {
+                background: conic-gradient(red, blue);
+              }</code></pre>
+            <div class="simple-conic"></div>
+            <p>Al igual que con los degradados lineales y radiales, todo lo que necesita para crear un degradado cónico son dos colores. 
+                Por defecto, el centro del degradado está en la marca 50% 50%, con el inicio del degradado hacia arriba </p>
+            <h4>Posicionamiento del centro cónico</h4>
+            <pre class="line-numbers"><code class="language-css">.conic-gradient {
+                background: conic-gradient(at 0% 30%, red 10%, yellow 30%, #1e90ff 50%);
+              }</code></pre>
+            <div class="conic-gradient"></div>
+            <p>Al igual que los degradados radiales, 
+                puede colocar el centro del degradado cónico con términos clave, porcentajes o longitudes absolutas, con la palabra clave at </p>
+            <h4>Cambiando el ángulo</h4>
+            <pre class="line-numbers"><code class="language-css">.conic-gradient {
+                background: conic-gradient(from 45deg, red, orange 50%, yellow 85%, green);
+              }</code></pre>
+            <div class="conic-gradient-angulo"></div>
+            <p>De forma predeterminada, las diferentes paradas de color que especifique están espaciadas equidistantemente alrededor del círculo. 
+                Puede colocar el ángulo de inicio del degradado cónico utilizando la palabra clave from al principio seguida de un ángulo o
+                 una longitud, y puede especificar diferentes posiciones para las paradas de colores al incluir un ángulo o una longitud después de ellas. </p>
+                
+        </article>
+        <article>
+            <h3>Degradados Repetitivos</h3>
+            <p>Las funciones linear-gradient , radial-gradient y conic-gradient no 
+                admiten paradas de color repetidas automáticamente. Sin embargo, las funciones repeating-linear-gradient
+                , repeating-radial-gradient y repeating-conic-gradient están disponibles para ofrecer esta funcionalidad.</p>
+            <p>El tamaño de la línea de degradado o el arco que se repite es la longitud entre el primer valor 
+                de parada de color y el último valor de longitud de parada de color. Si la primera parada de color solo 
+                tiene un color y no tiene longitud de parada de color, el valor predeterminado es 0. Si la última parada de color 
+                tiene solo un color y no tiene longitud de parada de color, el valor predeterminado es 100%. Si no se declara ninguno, 
+                la línea de degradado es 100%, lo que significa que los degradados lineales y cónicos no se repetirán y 
+                el degradado radial solo se repetirá si el radio del degradado es menor que la longitud entre el centro del degradado y 
+                la esquina más alejada. Si se declara la primera parada de color y el valor es mayor que 0, el degradado se repetirá, ya que el 
+                tamaño de la línea o el arco es la diferencia entre la primera parada 
+                de color y la última parada de color es inferior al 100% o 360 grados. </p>
+            <h4>Gradientes lineales repetitivos</h4>
+            <pre class="line-numbers"><code class="language-css">.repeating-linear {
+                background: repeating-linear-gradient(
+                  -45deg,
+                  red,
+                  red 5px,
+                  blue 5px,
+                  blue 10px
+                );
+              }</code></pre>
+            <div class="repeating-linear-gradient"></div>
+            <p>Este ejemplo usa repeating-linear-gradient para crear un degradado que progresa repetidamente en línea recta. Los colores se 
+                alternan nuevamente a medida que se repite el degradado. En este caso, la línea de degradado tiene una longitud de 10px. </p>
+            <h4>Múltiples degradados lineales repetitivos</h4>
+            <pre class="line-numbers"><code class="language-css">.multi-repeating-linear {
+                background: repeating-linear-gradient(
+                    190deg,
+                    rgba(255, 0, 0, 0.5) 40px,
+                    rgba(255, 153, 0, 0.5) 80px,
+                    rgba(255, 255, 0, 0.5) 120px,
+                    rgba(0, 255, 0, 0.5) 160px,
+                    rgba(0, 0, 255, 0.5) 200px,
+                    rgba(75, 0, 130, 0.5) 240px,
+                    rgba(238, 130, 238, 0.5) 280px,
+                    rgba(255, 0, 0, 0.5) 300px
+                  ), repeating-linear-gradient(
+                    -190deg,
+                    rgba(255, 0, 0, 0.5) 30px,
+                    rgba(255, 153, 0, 0.5) 60px,
+                    rgba(255, 255, 0, 0.5) 90px,
+                    rgba(0, 255, 0, 0.5) 120px,
+                    rgba(0, 0, 255, 0.5) 150px,
+                    rgba(75, 0, 130, 0.5) 180px,
+                    rgba(238, 130, 238, 0.5) 210px,
+                    rgba(255, 0, 0, 0.5) 230px
+                  ), repeating-linear-gradient(23deg, red 50px, orange 100px, yellow 150px, green
+                      200px, blue 250px, indigo 300px, violet 350px, red 370px);
+              }</code></pre>
+            <div class="multi-repeating-linear"></div>
+            <p>De forma similar a los degradados lineales y radiales normales, puede incluir varios degradados, uno encima del otro. 
+                Esto solo tiene sentido si los degradados son parcialmente transparentes, lo que permite que los degradados posteriores 
+                se muestren a través de las áreas transparentes, o si incluye diferentes valores de propiedad en background-size, opcionalmente 
+                con diferente background-position, para cada imagen degradada. Estamos usando la transparencia.</p>
+            <p>En este caso, las líneas de degradado tienen una longitud de 300px, 230px y 300px. </p>
+            <h4>Degradado de cuadros</h4>
+            <pre class="line-numbers"><code class="language-css">.plaid-gradient {
+                background: repeating-linear-gradient(
+                    90deg,
+                    transparent,
+                    transparent 50px,
+                    rgba(255, 127, 0, 0.25) 50px,
+                    rgba(255, 127, 0, 0.25) 56px,
+                    transparent 56px,
+                    transparent 63px,
+                    rgba(255, 127, 0, 0.25) 63px,
+                    rgba(255, 127, 0, 0.25) 69px,
+                    transparent 69px,
+                    transparent 116px,
+                    rgba(255, 206, 0, 0.25) 116px,
+                    rgba(255, 206, 0, 0.25) 166px
+                  ), repeating-linear-gradient(
+                    0deg,
+                    transparent,
+                    transparent 50px,
+                    rgba(255, 127, 0, 0.25) 50px,
+                    rgba(255, 127, 0, 0.25) 56px,
+                    transparent 56px,
+                    transparent 63px,
+                    rgba(255, 127, 0, 0.25) 63px,
+                    rgba(255, 127, 0, 0.25) 69px,
+                    transparent 69px,
+                    transparent 116px,
+                    rgba(255, 206, 0, 0.25) 116px,
+                    rgba(255, 206, 0, 0.25) 166px
+                  ), repeating-linear-gradient(
+                    -45deg,
+                    transparent,
+                    transparent 5px,
+                    rgba(143, 77, 63, 0.25) 5px,
+                    rgba(143, 77, 63, 0.25) 10px
+                  ), repeating-linear-gradient(45deg, transparent, transparent 5px, rgba(
+                        143,
+                        77,
+                        63,
+                        0.25
+                      ) 5px, rgba(143, 77, 63, 0.25) 10px);
+              
+              }</code></pre>
+            <div class="cuadrado-gradient"></div>
+            <p>Para crear cuadrados incluimos varios degradados superpuestos con transparencia. 
+                En la primera declaración de antecedentes enumeramos cada parada de color por separado.
+                 La segunda declaración de propiedad de fondo usando la sintaxis de parada de color de posición múltiple </p>
+                <h4>Degradados radiales repetitivos</h4>
+            <pre class="line-numbers"><code class="language-css">.repeating-radial {
+                background: repeating-radial-gradient(
+                  black,
+                  black 5px,
+                  white 5px,
+                  white 10px
+                );
+              }</code></pre>
+            <div class="repeating-radial"></div>
+            <p>Este ejemplo usa repeating-radial-gradient para crear un degradado que irradia repetidamente desde un punto central. 
+                Los colores se alternan una y otra vez a medida que se repite el degradado.</p>
+            <h4>Múltiples degradados radiales repetitivos</h4>
+            <pre class="line-numbers"><code class="language-css">.multi-target {
+                background:
+                  repeating-radial-gradient(
+                      ellipse at 80% 50%,
+                      rgba(0, 0, 0, 0.5),
+                      rgba(0, 0, 0, 0.5) 15px,
+                      rgba(255, 255, 255, 0.5) 15px,
+                      rgba(255, 255, 255, 0.5) 30px
+                    ) top left no-repeat,
+                  repeating-radial-gradient(
+                      ellipse at 20% 50%,
+                      rgba(0, 0, 0, 0.5),
+                      rgba(0, 0, 0, 0.5) 10px,
+                      rgba(255, 255, 255, 0.5) 10px,
+                      rgba(255, 255, 255, 0.5) 20px
+                    ) top left no-repeat yellow;
+                background-size:
+                  200px 200px,
+                  150px 150px;
+              }</code></pre>
+            <div class="multi-target"></div>
+            <p>Este es un ejemplo que utiliza el multi target para combinar varios radiales repetitivos. </p>
+        </article>
+    </section>
+    </main>
+    <footer>
+        <div>Jaime Rabasco Ronda</div>
+        <a href="https://x.com/jaimerr" class="social"><img src="icon/x-twitter.svg" alt="Twitter"></a>
+        <a href="https://github.com/jaimerabasco" class="social"><img src="icon/github.svg" alt="GitHub"></a>
+    </footer>
+</body>

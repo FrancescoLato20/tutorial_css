@@ -1,0 +1,175 @@
+
+
+.simple-conic{
+    margin: auto;
+    height: 200px;
+    width: 400px;
+    background: conic-gradient(red, blue);
+  }
+
+.conic-gradient {
+    margin: auto;
+    width: 400px;
+    height: 200px;
+    background: conic-gradient(at 0% 30%, red 10%, gold 30%, peru 50%);
+  }
+
+.conic-gradient-angulo{
+    margin: auto;
+    width: 400px;
+    height: 200px;
+    background: conic-gradient(from 45deg, red, orange 50%, yellow 85%, green);
+  }
+
+  .repeating-linear-gradient{
+    margin: auto;
+    width: 400px;
+    height: 200px;
+    background: repeating-linear-gradient(
+      -45deg,
+      red,
+      red 5px,
+      blue 5px,
+      blue 10px
+    );
+  }
+
+  .multi-repeating-linear  {
+    margin: auto;
+    width: 600px;
+    height: 400px;
+    background: repeating-linear-gradient(
+        190deg,
+        rgba(255, 0, 0, 0.5) 40px,
+        rgba(255, 153, 0, 0.5) 80px,
+        rgba(255, 255, 0, 0.5) 120px,
+        rgba(0, 255, 0, 0.5) 160px,
+        rgba(0, 0, 255, 0.5) 200px,
+        rgba(75, 0, 130, 0.5) 240px,
+        rgba(238, 130, 238, 0.5) 280px,
+        rgba(255, 0, 0, 0.5) 300px
+      ), repeating-linear-gradient(
+        -190deg,
+        rgba(255, 0, 0, 0.5) 30px,
+        rgba(255, 153, 0, 0.5) 60px,
+        rgba(255, 255, 0, 0.5) 90px,
+        rgba(0, 255, 0, 0.5) 120px,
+        rgba(0, 0, 255, 0.5) 150px,
+        rgba(75, 0, 130, 0.5) 180px,
+        rgba(238, 130, 238, 0.5) 210px,
+        rgba(255, 0, 0, 0.5) 230px
+      ), repeating-linear-gradient(23deg, red 50px, orange 100px, yellow 150px, green
+          200px, blue 250px, indigo 300px, violet 350px, red 370px);
+  }
+
+
+  .cuadrado-gradient {
+    margin: auto;
+    width: 400px;
+    height: 200px;
+    background: repeating-linear-gradient(
+        90deg,
+        transparent,
+        transparent 50px,
+        rgba(255, 127, 0, 0.25) 50px,
+        rgba(255, 127, 0, 0.25) 56px,
+        transparent 56px,
+        transparent 63px,
+        rgba(255, 127, 0, 0.25) 63px,
+        rgba(255, 127, 0, 0.25) 69px,
+        transparent 69px,
+        transparent 116px,
+        rgba(255, 206, 0, 0.25) 116px,
+        rgba(255, 206, 0, 0.25) 166px
+      ), repeating-linear-gradient(
+        0deg,
+        transparent,
+        transparent 50px,
+        rgba(255, 127, 0, 0.25) 50px,
+        rgba(255, 127, 0, 0.25) 56px,
+        transparent 56px,
+        transparent 63px,
+        rgba(255, 127, 0, 0.25) 63px,
+        rgba(255, 127, 0, 0.25) 69px,
+        transparent 69px,
+        transparent 116px,
+        rgba(255, 206, 0, 0.25) 116px,
+        rgba(255, 206, 0, 0.25) 166px
+      ), repeating-linear-gradient(
+        -45deg,
+        transparent,
+        transparent 5px,
+        rgba(143, 77, 63, 0.25) 5px,
+        rgba(143, 77, 63, 0.25) 10px
+      ), repeating-linear-gradient(45deg, transparent, transparent 5px, rgba(
+            143,
+            77,
+            63,
+            0.25
+          ) 5px, rgba(143, 77, 63, 0.25) 10px);
+  
+    background: repeating-linear-gradient(
+        90deg,
+        transparent 0 50px,
+        rgba(255, 127, 0, 0.25) 50px 56px,
+        transparent 56px 63px,
+        rgba(255, 127, 0, 0.25) 63px 69px,
+        transparent 69px 116px,
+        rgba(255, 206, 0, 0.25) 116px 166px
+      ), repeating-linear-gradient(
+        0deg,
+        transparent 0 50px,
+        rgba(255, 127, 0, 0.25) 50px 56px,
+        transparent 56px 63px,
+        rgba(255, 127, 0, 0.25) 63px 69px,
+        transparent 69px 116px,
+        rgba(255, 206, 0, 0.25) 116px 166px
+      ), repeating-linear-gradient(
+        -45deg,
+        transparent 0 5px,
+        rgba(143, 77, 63, 0.25) 5px 10px
+      ), repeating-linear-gradient(45deg, transparent 0 5px, rgba(
+            143,
+            77,
+            63,
+            0.25
+          ) 5px 10px);
+  }
+  
+
+  .repeating-radial {
+    margin: auto;
+    width: 400px;
+    height: 200px;
+    background: repeating-radial-gradient(
+      black,
+      black 5px,
+      white 5px,
+      white 10px
+    );
+  }
+
+  .multi-target {
+    margin: auto;
+    width: 250px;
+    height: 150px;
+    background:
+      repeating-radial-gradient(
+          ellipse at 80% 50%,
+          rgba(0, 0, 0, 0.5),
+          rgba(0, 0, 0, 0.5) 15px,
+          rgba(255, 255, 255, 0.5) 15px,
+          rgba(255, 255, 255, 0.5) 30px
+        ) top left no-repeat,
+      repeating-radial-gradient(
+          ellipse at 20% 50%,
+          rgba(0, 0, 0, 0.5),
+          rgba(0, 0, 0, 0.5) 10px,
+          rgba(255, 255, 255, 0.5) 10px,
+          rgba(255, 255, 255, 0.5) 20px
+        ) top left no-repeat yellow;
+    background-size:
+      200px 200px,
+      150px 150px;
+  }
+  
