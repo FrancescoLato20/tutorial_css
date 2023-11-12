@@ -8,8 +8,9 @@
 .contenedor {
     margin-left: 20%;
     margin-right: 20%;
-    height: 50px;
+    height: 100px;
     width: auto;
+    margin-bottom: 1%;
 }
 
 .contenedor-inline {
@@ -22,7 +23,7 @@
     margin-left: 20%;
     margin-right: 20%;
     height: 200px;
-    width: 400px;
+    width: 60%;
 }
 
 #deglinbasico {
@@ -52,14 +53,17 @@
 #deglinbasicoangle0 {
     background: linear-gradient(0deg, red, rgb(0, 255, 136));
 }
+
 #deglinbasicoangle90 {
     background: linear-gradient(90deg, red, rgb(0, 255, 136));
 }
+
 #deglinbasicoangle180 {
     background: linear-gradient(180deg, red, rgb(0, 255, 136));
 }
+
 #deglinbasicoangle-90 {
-    background: linear-gradient(-90deg, red, rgb(0,255, 136));
+    background: linear-gradient(-90deg, red, rgb(0, 255, 136));
 }
 
 #colorvarious {
@@ -75,27 +79,87 @@
 }
 
 #colorpositionhard {
-    background: linear-gradient(to right,  yellow 70%, green 70%);
+    background: linear-gradient(to right, yellow 70%, green 70%);
 }
 
 #colornohint {
-    background: linear-gradient(to right,  yellow, green);
+    background: linear-gradient(to right, yellow, green);
 }
 
 #colorstripe {
-    background: linear-gradient(red 33%,yellow 33%, yellow 66%, orange 66%);
+    background: linear-gradient(red 33%, yellow 33%, yellow 66%, orange 66%);
 }
 
 #coloroverlay {
-    background: linear-gradient(to left, transparent, red), 
+    background: linear-gradient(to left, transparent, red),
         url("../img/fondo.jpg");
 }
 
 #colorstacked {
-    background: linear-gradient(
-        217deg,
-        rgba(255, 0, 0, 0.8),
-        rgba(255, 0, 0, 0) 70.71%
-      ), linear-gradient(127deg, rgba(0, 255, 0, 0.8), rgba(0, 255, 0, 0) 70.71%),
-      linear-gradient(336deg, rgba(0, 0, 255, 0.8), rgba(0, 0, 255, 0) 70.71%);
+    background: linear-gradient(217deg,
+            rgba(255, 0, 0, 0.8),
+            rgba(255, 0, 0, 0) 70.71%), linear-gradient(127deg, rgba(0, 255, 0, 0.8), rgba(0, 255, 0, 0) 70.71%),
+        linear-gradient(336deg, rgba(0, 0, 255, 0.8), rgba(0, 0, 255, 0) 70.71%);
+}
+
+#degradbas {
+    background: radial-gradient(green, yellow);
+}
+
+#degradstop {
+    background: radial-gradient(green 10%, yellow 50%);
+}
+
+#degracent {
+    background: radial-gradient(at bottom, green 10%, yellow 50%);
+}
+
+#degradcc {
+    background: radial-gradient(ellipse closest-corner, green 10%, yellow 50%);
+}
+
+#degradcs {
+    background: radial-gradient(ellipse closest-side, green 10%, yellow 50%);
+}
+
+#degradfc {
+    background: radial-gradient(ellipse farthest-corner, green 10%, yellow 50%);
+}
+
+#degradfs {
+    background: radial-gradient(ellipse farthest-side, green 10%, yellow 50%);
+}
+
+#degradccc {
+    background: radial-gradient(circle closest-corner, green 10%, yellow 50%);
+}
+
+#degradcsc {
+    background: radial-gradient(circle closest-side, green 10%, yellow 50%);
+}
+
+#degradfcc {
+    background: radial-gradient(circle farthest-corner, green 10%, yellow 50%);
+}
+
+#degradfsc {
+    background: radial-gradient(circle farthest-side, green 10%, yellow 50%);
+}
+
+#degradcircle50 {
+    background: radial-gradient(circle 50px, green 10%, yellow 50%);
+}
+
+#degradapilado {
+    background:
+        radial-gradient(circle at 50% 0,
+            rgba(255, 0, 0, 0.5),
+            rgba(255, 0, 0, 0) 70.71%),
+        radial-gradient(circle at 6.7% 75%,
+            rgba(0, 0, 255, 0.5),
+            rgba(0, 0, 255, 0) 70.71%),
+        radial-gradient(circle at 93.3% 75%,
+            rgba(0, 255, 0, 0.5),
+            rgba(0, 255, 0, 0) 70.71%) beige;
+    border-radius: 50%;
 }

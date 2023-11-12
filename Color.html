@@ -134,11 +134,49 @@
     </article>
     <article class="sergio">
         <h2>Degradados radiales</h2>
-        <p>En esta parte se verán los degradados radiales.</p>
+        <p>En esta parte se verán los degradados radiales. Son similares a los lineales, excepto que irradian desde un punto central. También pueden ser circulares o elípticos.</p>
     </article>
     <article class="sergio">
-        <h3>Uso de varios colores</h3>
-        <div class="contenedor" id="colorvarious"></div>
+        <h3>Degradado radial básico</h3>
+        <div class="contenedor" id="degradbas"></div>
+        <p>En este caso se ha utilizado el degradado radial básico, utlizando un degrado radial amarillo y verde. Para usarlo se utiliza <b>background: radial-gradient(green, yellow)</b></p>
+        <h3>Posicionamiento de paradas de color radiales</h3>
+        <div class="contenedor" id="degradstop"></div>
+        <p>De la misma forma que con el degradado lineal, se pueden utilizar las paradas de color con porcentaje o longitud absoluta.<b> background: radial-gradient(green 10%, yellow 50%)</b></p>
+        <div class="contenedor" id="degracent"></div>
+        <p>Con términos absolutos, porcentajes o términos clave se puede indicar el centro del degradado, es decir, desde donde irradian los colores. Por ejemplo, si queremos que empiece en la parte de abajo podemos indicar: background: radial-gradient(<b>at bottom</b>, green 10%, yellow 50%);</p>
+        <h3>Tamaños de degradados radiales</h3>
+        <div class="contenedor" id="degradcc"></div>
+        <div class="contenedor" id="degradcs"></div>
+        <div class="contenedor" id="degradfc"></div>
+        <div class="contenedor" id="degradfs"></div>
+        <p>Al contrario que con los degradados lineales, se puede indicar el tamaño de los degradados radiales. Además de los porcentajes o absolutos, también están: <b>closest-corner, closest, side, farthest-corner, farthest side.</b> Arriba un ejemplo de cada, por este mismo orden, para los elipses.</p>
+        <div class="contenedor" id="degradccc"></div>
+        <div class="contenedor" id="degradcsc"></div>
+        <div class="contenedor" id="degradfcc"></div>
+        <div class="contenedor" id="degradfsc"></div>
+        <p>Para círculos también se utilizan <b>closest-corner, closest, side, farthest-corner, farthest side.</b> Arriba un ejemplo de cada, por este mismo orden, para los círculos.</p>
+        <div class="contenedor" id="degradcircle50"></div>
+        <p>Para uso normal por ejemplo, de valores absolutos, se usa lo siguiente: background: radial-gradient(circle 50px, green 10%, yellow 50%);</p>
+        <h3>Degradados radiales apilados</h3>
+        <div class="contenedor" id="degradapilado"></div>
+        <p>Al igual que con los degradados lineales, se pueden apilar degradados radiales, aquí un ejemplo: <b>  background:
+            radial-gradient(
+              circle at 50% 0,
+              rgba(255, 0, 0, 0.5),
+              rgba(255, 0, 0, 0) 70.71%
+            ),
+            radial-gradient(
+              circle at 6.7% 75%,
+              rgba(0, 0, 255, 0.5),
+              rgba(0, 0, 255, 0) 70.71%
+            ),
+            radial-gradient(
+                circle at 93.3% 75%,
+                rgba(0, 255, 0, 0.5),
+                rgba(0, 255, 0, 0) 70.71%
+              ) beige;
+          border-radius: 50%;</b></p>
     </article>
 </body>
 <footer>
