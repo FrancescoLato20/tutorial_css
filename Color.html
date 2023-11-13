@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>TUTORIAL CSS3 - 2023/2024- Diseño de Interfaces Web - CFGS DAW - IES Gran Capitán</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/prism.css">
+    <link rel="stylesheet" href="css/color.css">
+    <script src="js/prism.js"></script>
+</head>
+<body>
+    <header>
+        <h1><a href="index.html">TUTORIAL CSS3 - 2023/2024</a></h1>
+        <h2><img src="icon/language-css3.svg"></h2>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="Bordes.html">Bordes</a></li>
+            <li><a href="Fondos.html">Fondos</a></li>
+            <li><a href="Efectos_texto.html">Fuentes y Ef Texto</a></li>   
+            <li><a href="Transformaciones.html">Transformac.</a></li>
+            <li><a href="Transiciones.html">Transiciones</a></li>
+            <li><a href="Animaciones.html">Animaciones</a></li>
+            <li><a href="Col_mult.html">Col Múltiples</a></li>
+            <li><a href="Color.html">Color y Degradado</a></li>
+            <li><a href="Pseudos_Css3.html">Pseudos CSS3</a></li>
+            <li><a href="Svg_filter.html">Filter y SVG</a></li>
+
+        </ul>
+    </nav>
+    <main>
+        <div>
+            <h2>CSS Colors</h2>
+            <h3>Propiedades para modificar los colores de los elementos de un documento HTML</h3>
+        </div>
+    
+    <section>
+        <article>
+            <p style="text-align: center;">Los colores se especifican utilizando nombres de colores predefinidos o valores RGB, HEX, HSL, RGBA, HSLA.</p>
+            <h2>Nombres de colores CSS predefinidos</h2>
+            <p>En CSS, se puede especificar un color utilizando un nombre de color predefinido.</p>
+            <pre class="line-numbers"><code class="language-css">color: [Aqui va el nombre de color];</code></pre>
+                <p>Aquí tenemos unos ejemplos de nombres de color: </p>
+            <div class="color-caja-colores">
+                <div class="color-caja1">
+                    <div class="color-tomato">color: tomato;</div>
+                    <div class="color-dodgerblue">color: dodgerblue;</div>
+                    <div class="color-grey">color: gray;</div>
+                    <div class="color-violet">color: violet;</div>
+                </div>
+                <div class="color-caja2">
+                    <div class="color-orange">color: orange;</div>
+                    <div class="color-mediumseagreen">color: mediumseagreen;</div>
+                    <div class="color-slateblue">color: slateblue</div>
+                    <div class="color-yellow">color: yellow;</div>
+                </div>
+            </div>
+            <p style="text-align: center;">En CSS tenemos 140 nombres de colores estándar.</p>
+                
+            <div class="color-boton">
+                <a href="https://www.w3schools.com/colors/colors_names.asp" target="_blank"> Consulta colores</a>
+            </div>
+        </article>
+
+        <article class="color-article2">
+            <h2>Valores de color CSS</h2>
+            <p>En CSS, los colores también se pueden especificar usando valores RGB, valores HEX, HSL valores, valores RGBA y valores HSLA</p>
+            <h3>Valor RGB</h3>
+            <p>Cuando hablamos de RGB (del inglés de Red, Green, Blue, en español rojo, verde y azul)
+                <br>estamos haciendo referencia a un sistema de composición de colores basado en la adición de los colores primarios de la luz.
+            </p>
+            <div class="color-rgb">
+                <div class="color-rojo">R</div>
+                <div class="color-verde">G</div>
+                <div class="color-azul">B</div>
+            </div>
+            <p>Cada parámetro (rojo, verde, y azul) define la intensidad del color entre 0 y 255.
+                <br>Por ejemplo, rgb(255, 0, 0) se muestra como rojo, porque el rojo se fija a su valor más alto (255) y los demás son establecido a 0.
+                <br>Para mostrar el negro, establezca todos los parámetros de color a 0, así: rgb(0, 0, 0).
+                <br>Para mostrar blanco, establezca todos los parámetros de color a 255, como esto: rgb (255, 255, 255).
+                <br></p>
+            <pre class="line-numbers"><code class="language-css">background-color: rgb(238, 130, 238);
+background-color: rgb(255, 165, 0);
+background-color: rgb(255, 99, 71);</code></pre>    
+            <div class="color-cajas-rgb">
+                <div class="color-caja-rgb-lila"><p style="color:white">rgb(238, 130, 238)</p></div>
+                <div class="color-caja-rgb-orange"><p style="color:white">rgb(255, 165, 0)</p></div>
+                <div class="color-caja-rgb-red"><p style="color:white">rgb(255, 99, 71)</p></div>
+            </div>
+            <h3>Valor RGBA</h3>
+            <p>Los valores de color RGBA son una extensión de los valores de color RGB con un canal alfa - que especifica la opacidad para un color.
+                <br>Un valor de color RGBA es se especifica con:
+            </p>
+            <pre class="line-numbers"><code class="language-css">color: rgb(red, green, blue, alpha);</code></pre>
+            <br>
+            <br>
+            <p>El parámetro alfa es un número entre 0,0 (totalmente transparente) y 1.0 (no transparente en absoluto)</p>
+            <br>
+            <pre class="line-numbers"><code class="language-css">color: rgb(255, 165, 0, 0.5);</code></pre>
+            <div class="color-container-img">
+                <div class="color-alfa"></div>
+            </div>
+            
+        </article>
+        <article>
+            <h3>Valor HSL</h3>
+        </article>
+    </section>
+    </main>
+    
+</body>
+</html>
