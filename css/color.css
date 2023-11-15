@@ -186,7 +186,7 @@
 .color-container-img{
     width: 600px;
     height: 300px;
-    background-image: url(/Tutorial_CSS3_2023-24/img/background.jpg);
+    background-image: url(/img/background.jpg);
     background-size: cover; /* ajusta el tamaño de la imagen para cubrir todo el div */
     background-position: center; /* centra la imagen en el div */
     background-repeat: no-repeat; /* evita que la imagen se repita */
