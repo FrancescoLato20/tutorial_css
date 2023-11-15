@@ -101,15 +101,18 @@
     padding: 10px;
     border-radius: 10px;
     box-shadow: 0px 0px 10px 2px gray;
+    text-align: center;
 }
 
 .color-boton:hover {
     background-color: dodgerblue;
 }
 
-.color-article2 p{
+/* article RGB */
+
+/*.color-article2 p{
     text-align: center;
-}
+}*/
 
 .color-rgb{
     background-color:#cccccc ;
@@ -145,6 +148,7 @@
     display: flex;
     justify-content: center;
     margin-bottom: 80px;
+    text-align: center;
 }
 
 .color-caja-rgb-lila {
@@ -182,7 +186,7 @@
 .color-container-img{
     width: 600px;
     height: 300px;
-    background-image: url(/Tutorial_CSS3_2023-24/img/background.jpg);
+    background-image: url(/img/background.jpg);
     background-size: cover; /* ajusta el tamaño de la imagen para cubrir todo el div */
     background-position: center; /* centra la imagen en el div */
     background-repeat: no-repeat; /* evita que la imagen se repita */
@@ -196,4 +200,40 @@
     width:300px;
     height: 100px;
     background-color: rgb(255, 165, 0, 0.5);
+}
+
+/* article hexadecimal */
+
+.color-hex {
+    display:flex;
+    justify-content: center;
+}
+
+.color-hex div{
+    width: 300px;
+    height: 100px;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.color-hex-caja1{
+    background-color:  #ffc300 ;
+    display: flex;
+}
+
+.color-hex-caja2{
+    background-color:  #ff00ec ;
+}
+
+.color-hex-caja3{
+    background-color:   #009eff ;    ;
+}
+
+.color-caja-hex-3digitos {
+    width: 800px;
+    height: 100px;
+    background-color: #fc9;
+    margin: 30px auto;
 }

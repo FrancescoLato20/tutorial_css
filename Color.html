@@ -109,6 +109,60 @@ background-color: rgb(255, 99, 71);</code></pre>
         </article>
         <article>
             <h3>Valor HSL</h3>
+            <p>Los valores de color HSL son compatibles en Edge, Chrome, Firefox, Safari, Opera 10o, y en IE9.
+            <br>HSL significa Hue, Saturation, Lightness en español Tono, Saturación y Luz.</p>
+            <h4>Tono</h4>
+            <p>El tono es un grado en la rueda de color de 0 a 360. 0 (o 360) es rojo, 120 es verde, 240 es azul.</p>
+            <h4>Saturación</h4>
+            <p>La saturación puede describirse como la intensidad de un color. Es un valor porcentual del 0% al 100%.
+                <br>100% es de color completo, sin tonos de gris.
+                <br>El 50% es 50% gris, pero todavía se puede ver el color.
+                <br>El 0% es completamente gris; ya no se puede ver el color.</p>
+            <h4>Luz</h4>
+            <p>La luz de un color se puede describir como la cantidad de luz que desea dar el color.
+                <br>El 0% significa ninguna luz (oscura), 50% significa 50% de luz (ni oscura ni luz), y al 100% significa luz completa.</p>
+            
+                <pre class="line-numbers"><code class="language-css">color: hsl(0, 50%, 50%);</code></pre>
+                <br><br>
+                <p style="color: hsl(0, 50%, 50%); font-size: 30px; text-align: center; font-weight:900">Este texto tiene un color hsl</p>
+                <br><br>
+                <p>También podemos añadirle transparencia con el valor alpha.</p>
+                <br>
+                <pre class="line-numbers"><code class="language-css">color: hsl(0, 50%, 50%, 0.5);</code></pre>
+                <br><br>
+                <p style="color: hsl(0, 50%, 50%, 0.5); font-size: 30px; text-align: center; font-weight:900">Este texto tiene un color hsl con transparencia</p>
+                <br>
+        </article>
+
+        <article>
+            <h3>Valor hexadecimal</h3>
+            <br>
+            <p>Los valores de color hexadecimales son compatibles con todos los navegadores.
+            <br>Un color hexadecimal se especifica con: <b>#rrggbb</b></p>
+            <p>Donde rr (rojo), gg (verde) y bb (azul) son números enteros hexadecimales entre 00 y ff, especificando la intensidad del color. </p>
+            <p>Por ejemplo, #ff0000 se muestra en rojo, porque el rojo está configurado en su valor más alto (ff) y el otro dos (verde y azul) están configurados en 00.
+                <br>Otro ejemplo, #00ff00 se muestra en verde, porque el verde está configurado en su valor más alto (ff) y los otros dos (rojo y azul) están configurados en 00.
+                <br>Para mostrar <b>negro</b>, hay qu eponer todos los parámetros de color en 00, así: <b>#000000</b>.
+                <br>Para mostrar el <b>blanco</b>, todos los parámetros de color en ff, así: <b>#ffffff</b>. </p>
+            <pre class="line-numbers"><code class="language-css">background-color: #ffc300;
+background-color: #ff00ec;
+background-color: #009eff;</code></pre>
+            <div class="color-hex">
+                <div class="color-hex-caja1">1</div>
+                <div class="color-hex-caja2">2</div>
+                <div class="color-hex-caja3">3</div>
+            </div>
+            <br><br>
+            <h4>Valor HEX de 3 dígitos</h4>
+            <br>
+            <p>A veces verás un código hexadecimal de 3 dígitos en la fuente CSS.
+                <br>El código hexadecimal de 3 dígitos es una abreviatura de algunos códigos hexadecimales de 6 dígitos.
+                <br>El código hexadecimal de 3 dígitos tiene la siguiente forma: <b>#rgb</b> </p>
+            <br>
+            <pre class="line-numbers"><code class="language-css">background-color: #fc9;</code></pre>
+            <div class="color-caja-hex-3digitos"></div>
+
+
         </article>
     </section>
     </main>
